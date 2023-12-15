@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//
+//........................................................................................
 // if(!classCards.hasAttribute('id')){
 //     class.setAttribute('id', 'card');
 //     }
