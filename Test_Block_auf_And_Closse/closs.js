@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     textHead.style.cursor = "pointer";
     // Damit das block  vorher  zugeklappt  wird
     const nextElement = textHead.nextElementSibling;
+    // toogel classlist main, der im style none gegebn hat.
     nextElement.classList.toggle("main");
     const siblingButton = nextElement.nextElementSibling;
     if (siblingButton && siblingButton.tagName === "BUTTON") {
@@ -24,10 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // per hand wird zugeklappt
     textHead.addEventListener("click", (event) => {
       event.preventDefault();
-      const nextElement = textHead.nextElementSibling;
-      nextElement.classList.toggle("main");
 
-      const siblingButton = nextElement.nextElementSibling;
+      const nextElements = textHead.nextElementSibling;
+       nextElements.classList.toggle("main");
+
+      const siblingButton = nextElements.nextElementSibling;
       if (siblingButton.tagName === "BUTTON") {
         siblingButton.classList.toggle("main");
       }
