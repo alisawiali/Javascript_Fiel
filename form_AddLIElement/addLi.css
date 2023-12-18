@@ -29,7 +29,6 @@
     width: 50%;
     list-style: none;
     margin: 0.2rem 1rem;
-    border: 0.3px solid #000;
     border-radius: 0.3rem;
 }
 
@@ -75,7 +74,7 @@
     padding: 0.2rem;
     border-radius: 0.3rem;
     transition: all 0.8s ease;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 
     &:hover {
         cursor: pointer;
