@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const content = document.querySelector(".content");
-//   content.querySelectorAll(" li").forEach((li) => {
+//   content.querySelectorAll("li").forEach((li) => {
 //     li.addEventListener("click", (event) => {
 //       event.preventDefault();
 //       console.log(event.target.textContent);
