@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.toto-list .main {
+    width: 100%;
+    background-color: #cccc;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.toto-list .main li {
+    width: 200px;
+    padding: 0.3rem 0.4rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+
+}
+
+.main .toggel {
+    text-decoration: underline;
+}
+
+
+.toto-list .main li .destory {
+    width: 20px;
+    transition: all 0.8s ease;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+.view {
+    list-style: none;
+}
+
+/* ---------- */

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const LiItems = document.querySelectorAll(".li-Item");
   addStudentButton.addEventListener("click", (event) => {
     event.preventDefault();
-    // checkbox wird gechecked
+    // checkbox wird gechecked ----------------------------
     if (checkboxInput.checked === false) {
       alert("Pleacen AGB read");
       // bei retren wird angehalten , wenn den User nicht auf dem Box checked
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const removeLiElemnt = (liElemnt) => {
       liElemnt.remove();
     };
-    //  remove Li list
+    //  remove ALL thi  Li-list
     for (const litem of LiItems) {
       litem.addEventListener("click", () => {
         removeLiElemnt(litem);
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const text = nameInput.value;
     if (text) {
-      // Definre tag (strong)
+      // Definre tag (strong)  ----------------------------
       const strongElemnt = document.createElement("strong");
       strongElemnt.appendChild(document.createTextNode(text));
-      // difinree (li) und add strongElemnt in liElemnt
+      // difinree (li) und add strongElemnt in liElemnt  ----------------------------
       const liElemnt = document.createElement("li");
       liElemnt.appendChild(strongElemnt);
       ulElemnt.appendChild(liElemnt);
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       liElemnt.addEventListener("click", () => {
         removeLiElemnt(liElemnt);
       });
-      // Die Input leer  weder erstellen
+      // Die Input leer  weder erstellen  ----------------------------
       nameInput.value = "";
 
       return;
