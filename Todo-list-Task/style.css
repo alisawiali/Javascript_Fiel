@@ -16,36 +16,35 @@ section {
     align-items: center;
 }
 
+strong {
+    text-decoration: line-through;
+}
 
-.toto-list .main {
+.toto-list li {
     width: 100%;
     background-color: #cccc;
     margin-top: 0.3rem;
     border-radius: 0.2rem;
+    list-style-type: none;
 }
 
-.toto-list .main li {
+.toto-list li .main {
     width: 200px;
     padding: 0.3rem 0.4rem;
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.7rem;
-
 }
 
-.main .toggel {
-    text-decoration: underline;
-}
-
-
-.toto-list .main li .destory {
+.toto-list li .main .destory {
     width: 20px;
     transition: all 0.8s ease;
     border: none;
     outline: none;
     border-radius: 1rem;
+    margin-right: 0.3rem;
+        cursor: pointer;
 
     &:hover {
         background-color: blue;
@@ -53,6 +52,15 @@ section {
     }
 }
 
+.compted {
+    background-color: red;
+    text-decoration: line-through;
+}
+
+li .main .toggel {
+    text-transform: lowercase;
+    background-color: red;
+}
 .view {
     list-style: none;
 }
