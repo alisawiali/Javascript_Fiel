@@ -7,7 +7,14 @@
 .header {
     text-align: center;
 }
-
+.todoApp {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 section {
     width: 80%;
     margin: 0 auto;
@@ -16,16 +23,18 @@ section {
     align-items: center;
 }
 
-strong {
+/* section strong {
     text-decoration: line-through;
 }
 
+*/
 .toto-list li {
     width: 100%;
     background-color: #cccc;
     margin-top: 0.3rem;
     border-radius: 0.2rem;
     list-style-type: none;
+
 }
 
 .toto-list li .main {
@@ -37,6 +46,9 @@ strong {
     font-size: 0.7rem;
 }
 
+.main .toggle {
+    cursor: pointer;
+}
 .toto-list li .main .destory {
     width: 20px;
     transition: all 0.8s ease;
@@ -61,8 +73,33 @@ li .main .toggel {
     text-transform: lowercase;
     background-color: red;
 }
-.view {
-    list-style: none;
+.footer {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer .todo-count {
+    font-size: 0.8rem;
+}
+
+.footer .clearBtn {
+    display: block;
+    font-size: 0.8rem;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: #ffff;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.8s ease;
+
+    &:hover {
+        background-color: #4d97ff;
+    }
 }
 
 /* ---------- */
