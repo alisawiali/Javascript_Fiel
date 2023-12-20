@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   if (!ulElemntCount.classList.contains("completed")) {
     //     count++;
     //   }
-    //todoCountElemnt.innerText = count;
+    //     todoCountElemnt.innerText = count;
     // }
     // ----------------- Oder ----------- Damit die Zahl angezeigt wird.z.b wie viel Elemnte wurde hingefügt.
     const countElemnt =
@@ -108,5 +108,3 @@ document.addEventListener("DOMContentLoaded", () => {
     refercheFooter();
   });
 });
-
-
