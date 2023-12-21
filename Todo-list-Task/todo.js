@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   }
     //     todoCountElemnt.innerText = count;
     // }
-    // ----------------- Oder ----------- Damit die Zahl angezeigt wird.z.b wie viel Elemnte wurde hingefügt.
+    // ----------------- Oder (Count -> 0)----------- Damit die Zahl angezeigt wird.z.b wie viel Elemnte wurde hingefügt.
     const countElemnt =
       todoListUlElement.querySelectorAll("li:not(.completed)").length;
     todoCountElemnt.innerText = `Item ${countElemnt} `;
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkboxToggle = mainDiv.querySelector(".toggle");
 
     destoryBtn.addEventListener("click", (evnt) => {
+      evnt.preventDefault();
       if (checkboxToggle.checked) {
         mainDiv.remove();
         refercheFooter();
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       refercheFooter();
     });
   };
-
+  // input im Herader
   newTodoTaskElemnt.addEventListener("click", (evnt) => {
     evnt.preventDefault();
     const text = newTodoTaskElemnt.value;
@@ -74,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
       checkbox.type = "checkbox";
       checkbox.classList.add("toggle");
       checkbox.checked = true; // Wenn du das Kontrollkästchen standardmäßig aktivieren möchtest
-      checkbox.style.color = "red";
 
       const newdiv = document.createElement("div");
       newdiv.appendChild(newButton);

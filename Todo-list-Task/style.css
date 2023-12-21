@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-.header {
+.todoApp .header {
     text-align: center;
 }
+
 .todoApp {
     width: 80%;
     margin: 0 auto;
@@ -14,6 +15,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.todoApp .header #newTaskField {
+    border: 0.1px solid #000;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    outline: none;
 }
 section {
     width: 80%;
