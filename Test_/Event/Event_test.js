@@ -1,10 +1,6 @@
 console.clear();
 const todoModule = {
-  todos: [
-    { title: "HTML lernen", done: true },
-    { title: "CSS lernen", done: false },
-    { title: "JavaScript lernen", done: false },
-  ],
+  todos: [],
 
   // emit Methode function
   emit: function (eventName, payload) {
@@ -41,15 +37,26 @@ const todoModule = {
         count++;
       }
     }
-    console.log(` Anzahl unerledigten Todo ${count}`);
-    return;
+    console.log(count, `: Anzahl unerledigten Todo ${count}`);
+    return count;
+  },
+  printCurrentTodoCount: () => {
+    const todoCruuent = todoModule.getTodoCount();
+    console.log(
+      `Aktuelle Anzahl an nicht erledigten Todos ist ${todoCruuent}.`
+    );
   },
 };
-
+//
 console.log(todoModule.addTodo("PHP lernen"));
 console.log(todoModule.todos);
+//
 todoModule.completedTodo("CSS lernen");
 console.log(todoModule.todos);
-
+//
 todoModule.getTodoCount();
-console.log(todoModule.todos);
+console.log("Count ....", todoModule.todos);
+//
+todoModule.printCurrentTodoCount();
+
+
