@@ -16,7 +16,8 @@ const student = Object.create(getStudentname, {
     enumerable: true,
   },
 });
-
-Object.setPrototypeOf(student, getStudentname);
 debugger;
-console.log(student.getName());
+console.log(" Das Ergebnis: " + student.getName());
+
+
+
